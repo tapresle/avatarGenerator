@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Github-like Avatar Generator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body ng-app="avatarGenerator" ng-controller="generatorController as genCtrl">
+    
+    <div>
+      <button ng-click="genCtrl.generateAvatar()">Generate</button>
+    </div>
+    
+    <h1>HTML Based Avatar</h1>
+    
+    <div class="output">
+      <div class="row row0">
+        <span class="cell cell0">&nbsp;</span>
+        <span class="cell cell1">&nbsp;</span>
+        <span class="cell cell2">&nbsp;</span>
+        <span class="cell cell3">&nbsp;</span>
+        <span class="cell cell4">&nbsp;</span>
+      </div>
+      
+      <div class="row row1">
+        <span class="cell cell0">&nbsp;</span>
+        <span class="cell cell1">&nbsp;</span>
+        <span class="cell cell2">&nbsp;</span>
+        <span class="cell cell3">&nbsp;</span>
+        <span class="cell cell4">&nbsp;</span>
+      </div>
+      
+      <div class="row row2">
+        <span class="cell cell0">&nbsp;</span>
+        <span class="cell cell1">&nbsp;</span>
+        <span class="cell cell2">&nbsp;</span>
+        <span class="cell cell3">&nbsp;</span>
+        <span class="cell cell4">&nbsp;</span>
+      </div>
+      
+      <div class="row row3">
+        <span class="cell cell0">&nbsp;</span>
+        <span class="cell cell1">&nbsp;</span>
+        <span class="cell cell2">&nbsp;</span>
+        <span class="cell cell3">&nbsp;</span>
+        <span class="cell cell4">&nbsp;</span>
+      </div>
+      
+      <div class="row row4">
+        <span class="cell cell0">&nbsp;</span>
+        <span class="cell cell1">&nbsp;</span>
+        <span class="cell cell2">&nbsp;</span>
+        <span class="cell cell3">&nbsp;</span>
+        <span class="cell cell4">&nbsp;</span>
+      </div>
+    </div>
+    
+    <div>
+      <h2>Canvas Based Avatar</h2>
+      <canvas id="canvasOutput" height="250" width="250"></canvas>
+      <div>Right click to save as image</div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/avatarGenerator.module.js"></script>
+    <script src="js/generator.controller.js"></script>
+  </body>
+</html>

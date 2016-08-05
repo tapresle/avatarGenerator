@@ -1,0 +1,16 @@
+.output {
+  height: 250px;
+  width: 250px;
+}
+
+.row {
+  height: 50px;
+  width: 250px;
+  font-size: 0;
+}
+
+.cell {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
